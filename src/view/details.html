@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/index.css" />
+	<title>商品详情</title>
+</head>
+<body>
+	<div class="goods_details">
+		<div class="details_top">
+			<!-- 幻灯片 -->
+			<div class="swiper_content" id="swiper_content">
+				<div class="swiper_wrapper">
+					<div class="swiper_slider"><img src="../image/tem/tpxq.png" class="swiper_img top_img"></div>
+					<div class="swiper_slider"><img src="../image/tem/tpxq.png" class="swiper_img top_img"></div>
+				</div>
+				 <!-- 分页 -->
+				 <div class="swiper-pagination swiper-pagination2" id="swiper-pagination"></div>
+			</div>
+			<div class="top_bt">
+				<div class="title">
+					<label class="title_tag">年货精选</label>紫泥秦权紫砂壶紫泥秦权紫砂壶紫泥秦权紫砂壶
+				</div>
+				<div class="docs">
+					<span class="docs_a">￥<label class="docs_a——price">59.00</label></span>
+					<span class="docs_b">库存155</span></span>
+				</div>
+			</div>
+		</div>
+		<div class="details_row">
+			<div class="col">运费 6元</div>
+			<div class="col">销量 4877</div>
+			<div class="col"><img src="../image/icon/dw.png" class="col_icon" />广州</div>
+		</div>
+		<div class="details_explain">
+			<div class="item">
+				<img src="../image/icon/gs.png" class="item_icon" />
+				<label>已交纳保证金</label>
+			</div>
+			<div class="item">
+				<img src="../image/icon/gs.png" class="item_icon" />
+				<label>承诺48小时发货</label>
+			</div>
+			<div class="item">
+				<img src="../image/icon/gs.png" class="item_icon" />
+				<label>承诺售后无纠纷</label>
+			</div>
+		</div>
+		<!-- 详情 -->
+		<div class="dateil_info">
+			<div class="title">商品详情</div>
+			<!-- 内容 -->
+			<div class="content">1</div>
+		</div>
+		<!-- 底部 -->
+		<footer class="footer">
+			<a href="tel:13632482567" class="footer_grow item">
+				<img src="../image/icon/d.png" class="item_icon" />
+				<label class="item_a">联系店家</label>
+			</a>
+			<a href="cart.html" class="footer_grow item">
+				<img src="../image/icon/c.png" class="item_icon" />
+				<label class="item_a">购物车</label>
+				<div class="item_num">99</div>
+			</a>
+			<div class="footer_grow2 item item——gray">加入购物车</div>
+			<div class="footer_grow2 item item——red" id="select">立即购买</div>
+		</footer>
+
+		<!-- 选择数量,规格，颜色 -->
+		<div class="dialog active">
+			<div class="cenment">
+				<div class="food_box">
+					<div class="food_msg">
+						<div class="food_left">
+							<img src="../image/tem/dk.png" class="left_img" />
+							<div class="left_a">
+								<div class="price">
+									<label class="price_a">¥</label>
+									<span class="price_b">989</span>
+									<label class="price_a">.20</label>
+								</div>
+								<div class="num">库存105件</div>
+							</div>
+						</div>
+						<img src="../image/icon/b.png" class="close" id="close" />
+					</div>
+					<div class="food_col">
+						<label class="col_name">颜色分类</label>
+						<div class="col_list" id="selectType">
+							<spam class="item active">默认型号</spam>
+							<spam class="item ">默认型号</spam>
+						</div>
+					</div>
+					<div class="food_col">
+						<label class="col_name">数量</label>
+						<div class="col_num">
+							<img src="../image/icon/z.png" class="num_icon" alt="" id="reduce" />
+							<spam class="num" id="number">1</spam>
+							<img src="../image/icon/j.png" class="num_icon" alt="" id="addNum" />
+						</div>
+					</div>
+				</div>
+				<div class="confirm">确定</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="../js/index.js"></script>
+<script type="text/javascript" src="../js/details.js"></script>
+<script>
+	var swiper = new Swiper("swiper_content",{
+        autoplay:true,      //自动循环
+        loop:true,          //闭环
+        speed:1000,         //速度
+        direction:"horizontal", //方向
+    
+        // 如果需要分页器
+        pagination: {
+            el: 'swiper-pagination',
+        },
+    });
+</script>
+</html>

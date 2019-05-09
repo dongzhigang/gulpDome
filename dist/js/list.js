@@ -1,0 +1,1 @@
+"use strict";$(function(){var e=!0;$(window).on("scroll",function(o){var t=$(window).scrollTop(),n=$(document).height();t+$(window).outerHeight()==n&&e&&(baseLoad(!(e=!1),".list_content"),setTimeout(function(){baseLoad(!1,".list_content")},1e3))})});

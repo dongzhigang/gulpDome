@@ -1,0 +1,79 @@
+.areaBox{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.2);
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+	.area{
+		width: 100%;
+		background: #fff;
+		height: px2rem(530px);
+		overflow:hidden;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		.areaTop{
+			width: 100%;
+			height: px2rem(77px);
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			font-size: px2rem(30px);
+			border-bottom: solid 1px #E2E1E6;
+			span{
+				width: 50%;
+				display: flex;
+				align-items: center;
+				padding:0 px2rem(30px);
+				box-sizing: border-box;
+				&.cancel{
+					color: #1A1A1A;
+					opacity: 0.5;
+				}
+				&.confirm{
+					color: #BA0019;
+					justify-content: flex-end;
+				}
+			}
+		}
+		.areaList{
+			width: 100%;
+			height: px2rem(88px*5);
+			overflow: hidden;
+			position: relative;
+			z-index: 100;
+			display: flex;
+			position: relative;
+			cursor: pointer;
+			-webkit-mask: -webkit-linear-gradient(top,#debb47 50%,rgba(36,142,36,0));
+			transform: perspective(1000);
+				-webkit-perspective: 1000; /* Safari 和 Chrome */
+			.areaList_mask{
+				width: 100%;
+				display: flex;
+				-webkit-mask: -webkit-linear-gradient(bottom,#debb47 50%,rgba(36,142,36,0));
+				transform: perspective(1000);
+				-webkit-perspective: 1000; /* Safari 和 Chrome */
+				.areaItem{
+					width: 100%;
+					height: 100%;
+					transform:translate3d(0,0,0);
+					transition:all 1s;
+					.areaSpan{
+						width: 100%;
+						height: px2rem(88px);
+						// border-bottom: solid 1px #F0EFF4;
+						// box-sizing: border-box;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						text-align: center;
+						font-size: px2rem(28px);
+					}
+				}	
+			}	
+		}
+	}
+}

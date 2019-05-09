@@ -1,0 +1,238 @@
+.orderForm{
+	width:100%;
+	height: 100%;
+	background: #F2F5FA;
+	padding-bottom: px2rem(100px);
+	box-sizing: border-box;
+	.address{
+		width: 100%;
+		// height: px2rem(210px);
+		display: flex;
+		align-items: center;
+		padding:0 px2rem(30px);
+		box-sizing: border-box;
+		background:rgba(255,255,255,1) url("../image/icon/x.png") bottom no-repeat;
+		background-size: 100% px2rem(7px);
+		font-size: px2rem(28px);
+		padding-bottom:px2rem(30px); 
+		.address_item{
+			width: 100%;
+			display: flex;
+			align-items: center;
+		}
+		.no_address{
+			width: 100%;
+			height: px2rem(110px);
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			span{
+				display: flex;
+				align-items: center;
+			}
+			.no_icon{
+				width: px2rem(17px);
+				height: px2rem(27px)
+			}
+		}
+		.topbox{
+			display: none;
+		}
+		.address_rigth{
+			width: 100%;
+			flex: 1;
+		}
+		.site_icon{
+			width: px2rem(28px);
+			height: px2rem(35px);
+			margin-right: px2rem(17px);
+		}
+		.site_icon2{
+			width: px2rem(17px);
+			height: px2rem(27px);
+			margin-left: px2rem(17px);
+		}
+		.top{
+			width: 100%;
+			height: px2rem(60px);
+			align-items: center;
+			box-sizing: border-box;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			color: #666;
+		}
+		.site{
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			color: #666;
+		}
+	}
+	.goods{
+		width: 100%;
+		padding:px2rem(26px) px2rem(30px);
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: row;
+		background: #fff;
+		margin: px2rem(20px) 0;
+		.goods_img{
+			width: px2rem(180px);
+			height: px2rem(180px);
+		}
+		.goods_left{
+			width: 100%;
+			padding-left: px2rem(20px);
+			display: flex;
+			flex-direction: row;
+			flex-flow: column;
+			justify-content: space-between;
+			.name{
+				color: #000;
+				font-size: px2rem(30px);
+				font-weight: bold;
+			}
+			.docs{
+				color: #999;
+				font-size: px2rem(24px);
+			}
+			.bt{
+				width: 100%;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				.price{
+					color: #BA0019;
+					font-size: px2rem(24px);
+				}
+				.quantity{
+					font-size: px2rem(28px);
+					color: #BA0019;
+					display: flex;
+					align-items: center;
+					.quantity_box{
+						width: px2rem(40px);
+						height: px2rem(40px);
+						&.active{
+							display: none;
+						}
+					}
+					.quantity_num{
+						width: px2rem(60px);
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						font-size: px2rem(30px);
+						color: #1A1A1A;
+					}
+				}
+			}
+		}
+	}
+	.list{
+		width: 100%;
+		background: #fff;
+		padding: 0 px2rem(30px);
+		box-sizing: border-box;
+		.item{
+			width: 100%;
+			height: px2rem(86px);
+			border-bottom: solid 1px #DDDDDD;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			color: #333;
+			font-size: px2rem(28px);
+			.item_input{
+				font-size: px2rem(24px);
+				color: #999999;
+				padding-left: px2rem(30px);
+			}
+			&:last-child{
+				justify-content: flex-end;
+				border-bottom: none;
+				font-size: px2rem(32px);
+				span{
+					margin-left: px2rem(30px);
+					font-weight: bold;
+				}
+			}
+			.item_a{
+				color: #BA0019;
+			}
+		}
+	}
+	.base{
+		width: 100%;
+		height: px2rem(88px);
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		background: #fff;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		font-size: px2rem(28px);
+		.base_a{
+			padding-left: px2rem(30px);
+			.base_a——color{
+				color: #BA0019;
+			}
+		}
+		.base_button{
+			width: px2rem(200px);
+			background: #BA0019;
+			height: px2rem(88px);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #fff;
+
+		}
+	}
+	.dialog{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.5);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		.dislog_cennent{
+			width: px2rem(520px);
+			height: px2rem(444px);
+			border-radius: px2rem(20px);
+			background: #fff;
+			display: flex;
+			flex-flow: column;
+			align-items: center;
+			justify-content: space-around;
+			.dialog_icon{
+				width: px2rem(149px);
+				height: px2rem(114px);
+			}
+			.dialog_docs{
+				font-size: px2rem(34px);
+				color: #666666;
+			}
+			.dialog_link{
+				width:px2rem(248px);
+				height: px2rem(74px);
+				border-radius: px2rem(37px);
+				background: #BA0019;
+				color: #fff;
+				font-size: px2rem(31px);
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+		}
+	}
+}

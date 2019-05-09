@@ -1,0 +1,1 @@
+"use strict";$(function(){$("#listData #setDefault").each(function(){$(this).on("click",function(){$("#listData #setDefault").removeClass("active"),$(this).addClass("active")})})});

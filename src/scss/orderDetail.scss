@@ -1,0 +1,120 @@
+.orderDetail{
+	width:100%;
+	height: 100%;
+	background: #F0EFF4;
+	.list{
+		width: 100%;
+		.item{
+			width: 100%;
+			background: #fff;
+			padding:0 px2rem(30px);
+			box-sizing: border-box;
+			font-size: px2rem(26px);
+			margin-bottom: 	px2rem(10px);
+			.detail_box{
+				width: 100%;
+				padding:px2rem(10px) 0;
+				display: flex;
+				flex-direction: row;
+				opacity: 0.5;
+				.detail_left{
+					width: px2rem(150px);
+				}
+				.detail_right{
+					text-align: left;
+					width: 100%;
+				}
+			}
+			.title{
+				width: 100%;
+				height: px2rem(57px);
+				display: flex;
+				align-items: center;
+				border-bottom: solid 1px #F0EFF4;
+			}
+			.detail_code{
+				width: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				.code_box{
+					width: 100%;
+					display: flex;
+					align-items: center;
+					flex: 1;
+				}
+				.detail_copy{
+					width: px2rem(90px);
+					height: px2rem(44px);
+					border: solid 1px #30374A;
+					color: #30374A;
+					font-size: px2rem(26px);
+					display: flex;
+					align-items: center;
+					justify-content: center;
+				}
+			}
+			.goods{
+				padding: px2rem(20px) 0;
+				width: 100%;
+				box-sizing: border-box;
+				display: flex;
+				align-items: center;
+				.goods_img{
+					width: px2rem(180px);
+					height: px2rem(180px);
+				}
+				.goods_info{
+					width: 100%;
+					height: px2rem(180px);
+					display:flex;
+					flex-flow: column;
+					justify-content: space-between;
+					padding-left: px2rem(20px);
+					box-sizing: border-box;
+					.name{
+						width: 100%;
+						font-size: px2rem(30px);
+					}
+					.docs{
+						font-size: px2rem(24px);
+						color: #999999;
+					}
+					.total{
+						font-size: px2rem(28px);
+						color: #BA0019;
+						display: flex;
+						width: 100%;
+						align-items: center;
+						justify-content: space-between;
+						.total_b{
+							width: px2rem(140px);
+							height: px2rem(60px);
+							background: #BA0019;
+							border-radius: px2rem(15px);
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							color: #fff;
+							font-size: px2rem(28px);
+						}
+					}
+				}
+			}
+			.item_pay{
+				width: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				font-size: px2rem(26px);
+				opacity: 0.5;
+				.pay——w{
+					font-weight: bold;
+				}
+				.pay——red{
+					color: #BA0019;
+				}
+			}
+		}
+	}
+}

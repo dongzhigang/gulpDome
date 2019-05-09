@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/index.css" />
+	<title>添加收货地址</title>
+	<!-- 编辑和添加收货地址页面 -->
+</head>
+<body>
+	<div class="addAddress">
+		<div class="list">
+			<div class="list_item">
+				<label class="item_name">收货人姓名</label>
+				<input class="item_input" type="text" placeholder="请输入收货人姓名" name="" id="address_name">
+			</div>
+			<div class="list_item">
+				<label class="item_name">手机号码</label>
+				<input class="item_code" placeholder="" type="text" name="" value="+86    中国" readonly="readonly"  >
+			</div>
+			<div class="list_item">
+				<label class="item_name"></label>
+				<input class="item_input" placeholder="请输入收货人手机号码" type="number" name="" value="" id="address_phone">
+			</div>
+			<div class="list_item">
+				<label class="item_name">所在地区</label>
+				<input class="item_input" id="d_areaValue" placeholder="请选择" type="text" name="" value="" readonly="readonly" ></input>
+				<div class="item_ab"><img src="../image/icon/jt.png"></div>
+			</div>
+			<div class="list_item">
+				<label class="item_name">详细地址</label>
+				<input class="item_input" placeholder="请输入街道地址" type="text" name="" value="" id="address_detail">
+			</div>
+		</div>
+		<div class="default">
+			<div class="row">
+				<span>设为默认收货地址</span>
+				<img src="../image/icon/hui.png" id="default" data-default="0">
+			</div>
+		</div>
+		<div class="confirmBox">确认</div>
+		<!-- 地区 -->
+		<div class="areaBox" id="d_areaBox">
+			<div class="area">
+				<div class="areaTop">
+					<span class="cancel" id="d_cancel">取消</span>
+					<span class="confirm" id="d_confirm">确认</span>
+				</div>
+				<div class="areaList">
+					<div class="areaList_mask" id="d_area"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="../js/index.js"></script>
+<script type="text/javascript" src="../js/addAddress.js"></script>
+</html>

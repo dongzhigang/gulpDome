@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/index.css" />
+	<title>确认订单</title>
+</head>
+<body>
+	<div class="orderForm">
+		<div class="address">
+			<a href="./addressList.html"  id="topbox" class="address_item" data-id="">
+				<img src="../image/icon/dss.png" class="site_icon" />
+				<div class="address_rigth">
+					<div class="top">
+						<span class="name" id="userName">收货人:小姐姐</span>
+						<span id="phone">123123123123</span>
+					</div>
+					<div class="site">
+						<span id="address">收货地址:广东省广州市天河区天河路壬丰大厦东厅3019</span>
+					</div>
+				</div>
+				<img src="../image/icon/y.png" class="site_icon2" />
+			</a>
+			<!-- 判断后去掉topbox类 -->
+			<!-- <a href="./addressList.html" class="no_address" id="no_address">
+				<span><img src="../image/icon/dss.png" class="site_icon" />请填写收货地址</span>
+				<img src="../image/icon/y.png" class="no_icon">
+			</a> -->
+		</div>
+		<div class="goods">
+			<img src="../image/tem/tpxq.png" class="goods_img" id="goods_master">
+			<div class="goods_left">
+				<div class="name" id="goods_title">紫泥秦权紫砂壶,周春燕作品,260cc左右。</div>
+				<div class="docs" id="goods_docs">默认型号</div>
+				<div class="bt">
+					<span class="price">￥<label id="goods_price">15800.00</label></span>
+					<span class="quantity">
+						<img src="../image/icon/zs.png" class="quantity_box active" id="minus" />
+						<span class="quantity_num" id="goods_quantity">1</span>
+						<img src="../image/icon/js.png" class="quantity_box" id="add" />
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="list">
+			<div class="item">
+				<span>满减</span>
+				<span class="item_a">-¥ 5.00</span>
+			</div>
+			<div class="item">
+				<span>运费</span>
+				<span>￥<label id="goods_carriage">10.00</label></span>
+			</div>
+			<div class="item">
+				<span>留言<input type="" placeholder="选填：请留下您的要求" name="" class="item_input" id="remark"></span>
+			</div>
+			<div class="item">
+				<span>共<label id="goods_num">1</label>件商品</span>
+				<span>小计：<font class="item_a">￥<label id="goods_total">15810.00</label></font></span>
+			</div>
+		</div>
+		<div class="base">
+			<span class="base_a">应付金额：<b class="base_a——color" >￥<label id="goods_totals">15810.00</label></b></span>
+			<span class="base_button" id="createOrder">提交订单</span>
+		</div>
+		<!-- 收货地址提示 -->
+		<!-- <div class="dialog">
+			<div class="dislog_cennent">
+				<img src="../image/icon/dz.png" class="dialog_icon" />
+				<div class="dialog_docs">请先添加收货地址</div>
+				<a href="addressList.html" class="dialog_link" >现在添加</a>
+			</div>
+		</div> -->
+	</div>
+</body>
+<script type="text/javascript" src="../js/index.js"></script>
+<script type="text/javascript" src="../js/orderForm.js"></script>
+</html>

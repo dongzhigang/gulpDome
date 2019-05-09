@@ -1,0 +1,198 @@
+.userCenter{
+	width:100%;
+	height: 100%;
+	background: #F0EFF4;
+	.user_logo{
+		width: 100%;
+		height: px2rem(236px);
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background: #F2F5FA;
+		.userBox{
+			padding-left: px2rem(40px);
+			display: flex;
+			align-items: center;
+			.user_img{
+				width: px2rem(126px);
+				height: px2rem(126px);
+				border-radius: 100%;
+			}
+			.user_name{
+				font-size: px2rem(26px);
+				color: #434343;
+				margin-left: px2rem(38px);
+				font-weight: bold;
+			}
+		}
+		.user_update{
+			width: px2rem(170px);
+			height: px2rem(70px);
+			border-top-left-radius: px2rem(35px);
+			border-bottom-left-radius: px2rem(35px);
+			background: #BA0019;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			.update_icon{
+				width: px2rem(30px);
+				height: px2rem(30px);
+			}
+			.update_text{
+				font-size: px2rem(24px);
+				color: #fff;
+			}
+		}
+	}
+	.order_list{
+		width: 100%;
+		background: #fff;
+		.head{
+			width: 100%;
+			height: px2rem(79px);
+			border-bottom: solid 1px #F2F5FA;
+			padding:0 px2rem(30px);
+			width: 100%;
+			box-sizing: border-box;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			.head_title{
+				font-size: px2rem(28px);
+				color: #30374A;
+			}
+			.head_right{
+				display: flex;
+				align-items: center;
+				.right_a{
+					font-size: px2rem(26px);
+					color: #30374A;
+					margin-right: px2rem(30px);
+					opacity: 0.5;
+				}
+				.right_icon{
+					width: px2rem(12px);
+					height: px2rem(21px);
+				}
+			}
+		}
+		.list_box{
+			width: 100%;
+			height: px2rem(200px);
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			border-bottom: solid 1px #F2F5FA;
+			.item{
+				height: 100%;
+				display: flex;
+				flex-flow: column;
+				font-size: px2rem(26px);
+				align-items: center;
+				color: #30374A;
+				position: relative;
+				justify-content: center;
+				.item_icon{
+					width: px2rem(73px);
+					height:px2rem(62px);
+				}
+				.item_name{
+					margin-top: px2rem(20px);
+				}
+				.item——ab{
+					position: absolute;
+					top: px2rem(30px);
+					right: px2rem(-5px);
+					width: px2rem(30px);
+					height: px2rem(30px);
+					border-radius: 100%;
+					background: #BA0019;
+					color: #fff;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					font-size: px2rem(18px);
+				}
+			}
+		}
+	}
+	.user_list{
+		width: 100%;
+		padding:0 px2rem(30px);
+		box-sizing: border-box;
+		background: #fff;
+		display: flex;
+		flex-flow: column;
+		.list_item{
+			width: 100%;
+			height: px2rem(98px);
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			border-bottom: solid 1px #F0EFF4;
+			font-size: px2rem(26px);
+			color: #1A1A1A;
+			.item_icon{
+				width: px2rem(16px);
+				height: px2rem(29px);
+			}
+			&:last-child{
+				border-bottom: none;
+			}
+		}
+	}
+	.dialog_phone{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.5);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: column;
+		&.active{
+			display: none;
+		}
+		.phone_box{
+			width: px2rem(520px);
+			height: px2rem(444px);
+			border-radius: px2rem(20px);
+			display: flex;
+			justify-content: space-around;
+			flex-flow: column;
+			background: #fff;
+			align-items: center;
+			.phone_icon{
+				width: px2rem(107px);
+				height: px2rem(107px);
+			}
+			.phone_code{
+				font-size: px2rem(34px);
+				color: #666666;
+			}
+			.phone_base{
+				width: px2rem(248px);
+				height: px2rem(74px);
+				border-radius: px2rem(37px);
+				background: #BA0019;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				color: #fff;
+				font-size: px2rem(31px);
+			}
+		}
+		.dialog_del{
+			width: px2rem(61px);
+			height: px2rem(61px);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-top: px2rem(20px);
+		}
+	}
+}

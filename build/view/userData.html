@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../css/index.css" />
+    <title>个人资料</title>
+</head>
+<body>
+    <div class="user_data">
+        <form method="">
+            <div class="rows">
+                <div class="col">
+                    <label class="col_left">头像</label>
+                    <div class="col_right">
+                        <img src="../image/icon/tx.png" class="col_icon" />
+                        <img src="../image/icon/y.png"  class="col_icon2" />
+                    </div>
+                </div>
+                <div class="col">
+                    <label class="col_left">昵称</label>
+                    <div class="col_right">
+                        <input type="text" placeholder="未填写"  class="col_input" />
+                        <img src="../image/icon/y.png"  class="col_icon2" />
+                    </div>
+                </div>
+                <div class="col">
+                    <label class="col_left">性别</label>
+                    <div class="col_right">
+                        <input type="text" placeholder="未填写"  class="col_input" readonly="readonly" id="sexValue" />
+                        <img src="../image/icon/y.png"  class="col_icon2" />
+                    </div>
+                </div>
+                <div class="col">
+                    <label class="col_left">出生日期</label>
+                    <div class="col_right">
+                        <input type="text" placeholder="未填写"  class="col_input" readonly="readonly" id="d_dateValue" />
+                        <img src="../image/icon/y.png"  class="col_icon2" />
+                    </div>
+                </div>
+            </div>
+        </form>
+        <button class="button">确定</button>
+        <!-- 性别 -->
+        <div class="dialog_sex active" id="sexBox">
+            <div class="list" id="sexList">
+                <div class="item active" data-sex="男">
+                    <label class="item_left">男</label>
+                    <img src="../image/icon/xz.png" class="item_icon" />
+                </div>
+                <div class="item" data-sex="女">
+                    <label class="item_left">女</label>
+                    <img src="../image/icon/xz.png" class="item_icon" />
+                </div>
+            </div>
+        </div>
+
+        <!-- 地区 -->
+		<div class="areaBox" id="d_dateBox">
+			<div class="area">
+				<div class="areaTop">
+					<span class="cancel" id="d_cancel">取消</span>
+					<span class="confirm" id="d_confirm">确认</span>
+				</div>
+				<div class="areaList">
+					<div class="areaList_mask" id="d_area"></div>
+				</div>
+			</div>
+		</div>
+    </div>
+</body>
+<script type="text/javascript" src="../js/index.js"></script>
+<script type="text/javascript" src="../js/userData.js"></script>
+</html>

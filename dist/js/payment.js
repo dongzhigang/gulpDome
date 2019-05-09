@@ -1,0 +1,1 @@
+"use strict";$(function(){var t=60,e=setInterval(function(){t--,$("#date").text(9<t?t:"0"+t),0==t&&(window.clearInterval(e),window.location.href="orderList.html")},1e3)});

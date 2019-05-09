@@ -1,0 +1,98 @@
+@import "addAddress";
+.addressList{
+	width:100%;
+	background: #F0EFF4;
+	.rows{
+		width: 100%;
+		padding-bottom: px2rem(100px);
+		.rows_col{
+			width: 100%;
+			background: #fff;
+			margin-bottom: px2rem(10px);
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			flex-flow: column;
+			&:last-child{
+				margin-bottom:0;
+			}
+			.col_top{
+				width: 100%;
+				height: px2rem(76px);
+				padding:0 px2rem(30px);
+				box-sizing: border-box;
+				color: #000;
+				font-size: px2rem(30px);
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+			}
+			.col_docs{
+				width: 100%;
+				padding:0 px2rem(30px);
+				box-sizing: border-box;
+				font-size: px2rem(26px);
+				color: #1A1A1A;
+				line-height: px2rem(48px);
+				padding-bottom: px2rem(10px);
+				border-bottom: solid 1px #F0EFF4; 
+			}
+			.col_base{
+				width: 100%;
+				height: px2rem(70px);
+				box-sizing: border-box;
+				display: flex;
+				align-items: center;
+				.base_default{
+					flex: 3;
+					display: flex;
+					align-items: center;
+					.base_default_select{
+						width: px2rem(36px);
+						height: px2rem(36px);
+						border-radius: 100%;
+						border:solid 1px #BA0019;
+						margin-left:px2rem(30px);
+						margin-right: px2rem(10px);
+						box-sizing: border-box;
+						&.active{
+							background: url("../image/icon/gc.png") no-repeat;
+							background-size: px2rem(36px) px2rem(36px);
+							border:solid 1px #fff;
+						}
+					}
+					.base_default_set{
+						font-size: px2rem(26px);
+						color: #888888;
+					}
+				}
+				.base_right{
+					flex: 1;
+					font-size: px2rem(26px);
+					color: #8C8C8C;
+					display: flex;
+					align-items: center;
+					.base_right_icon{
+						width: px2rem(37px);
+						height: px2rem(37px);
+						margin-right: px2rem(8px);
+					}
+				}
+			}
+		}
+	}
+	.addAddress{
+		position:fixed;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: px2rem(100px);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: #BA0019;
+		font-size: px2rem(30px);
+		color: #fff;
+	}
+}

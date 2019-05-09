@@ -1,0 +1,52 @@
+*{
+	margin: 0;
+	padding:0;
+}
+html{
+
+touch-action:none;
+
+touch-action:pan-y;
+
+}
+
+html,body{
+	font-family:SourceHanSansCN-Medium;
+	height: 100%;
+}
+body{
+	width:100%;
+	min-width: 320px;
+	// max-width: 750px;
+	margin: 0 auto;
+}
+p{
+	margin:0;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+input,textarea,button{
+	border: none;
+}
+input,textarea{
+	outline: none;
+	background: none;
+}
+@import "common";
+@import "SwiperSlider";
+@import "cart";
+@import "home";
+@import "list";
+@import "details";
+@import "orderForm";
+@import "orderList";
+@import "orderDetail";
+@import "payment";
+@import "addressList";
+@import "userCenter";
+@import "userData";
+@import "feedback";
+@import "search";

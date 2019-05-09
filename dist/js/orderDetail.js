@@ -1,0 +1,1 @@
+"use strict";$(function(){});var copyCode=function(){document.getElementById("code").select(),document.execCommand("copy")};

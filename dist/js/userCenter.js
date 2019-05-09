@@ -1,0 +1,1 @@
+"use strict";$(function(){$("#phone").on("click",function(){$("#dialog").removeClass("active")}),$("#hide").on("click",function(){$("#dialog").addClass("active")})});

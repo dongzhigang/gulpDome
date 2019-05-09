@@ -1,0 +1,93 @@
+@import "area";
+.addAddress{
+	width:100%;
+	height:100%;
+	background: #F0EFF4;
+	.list{
+		width: 100%;
+		background: #fff;
+		.list_item{
+			border-top: solid 1px #F0EFF4;
+			width: 100%;
+			height: px2rem(87px);
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			padding:0 px2rem(30px);
+			box-sizing: border-box;
+			color: #000;
+			font-size: px2rem(26px);
+			position: relative;
+			.item_name{
+				width: px2rem(200px);
+				display: inline-block;
+				opacity: 0.5;
+			}
+			.item_input{	
+				width: 100%;
+				display: flex;
+				align-items: center;
+				height: px2rem(87px);
+				opacity: 0.25;
+				font-size: px2rem(26px);
+			}
+			.item_code{
+				width: 100%;
+				display: flex;
+				align-items: center;
+				font-size: px2rem(26px);
+				color: #000;	
+			}
+			.item_ab{
+				position: absolute;
+				right: px2rem(30px);
+				top: 0;
+				width: px2rem(16px);
+				height: px2rem(87px);
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				img{
+					width: 100%;
+					height: px2rem(29px);
+				}
+			}
+		}		
+	}
+	.default{
+		width: 100%;
+		margin-top: px2rem(15px);
+		background: #fff;
+		.row{
+			width: 100%;
+			height: px2rem(87px);
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+			padding:0 px2rem(30px);
+			color: #000;
+			font-size: px2rem(26px);
+			opacity:0.5;
+			box-sizing: border-box;
+			img{
+				width: px2rem(72px);
+				height: px2rem(45px);
+			}
+		}
+	}
+	.confirmBox{
+		width: 100%;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		padding:px2rem(30px) px2rem(30px);
+		box-sizing: border-box;
+		background: #BA0019;
+		color: #fff;
+		font-size: px2rem(38px);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}

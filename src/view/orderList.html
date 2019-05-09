@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/index.css" />
+	<title>订单列表</title>
+</head>
+<body>
+	<div class="orderList">
+		<div class="head">
+			<div class="item active">全部</div>
+			<div class="item">待付款</div>
+			<div class="item">待收货</div>
+			<div class="item">已完成</div>
+		</div>
+		<div class="rows" id="orderList">
+			<div class="rows_col">
+				<a href="./orderDetail.html" class="goods">
+					<div class="goods_left">
+						<img src="../image/tem/tpxq.png" class="goods_img">
+						<div class="title">紫泥秦权紫砂壶,周春燕作品,260cc左右。</div>
+					</div>
+					<div class="goods_right">
+						<span class="right_a">￥15800.00</span>
+						<span class="right_b">x3</span>
+						<!-- right_c_1 right_c_2 颜色替换 -->
+						<span class="right_c right_c_1 right_c_2">交易成功</span> 
+					</div>
+				</a>
+				<div class="col_explain">共1件商品  实付款: ¥15800.00 (含运费¥5.00)</div>
+				<div class="base">
+					<span class="base_a">
+						<!-- 已签收 -->
+						<img src="../image/icon/gwc.png" class="base_icon">
+						<label>已签收</label>
+						<!-- 待付款 -->
+						<!-- <img src="../image/icon/f.png" class="base_icon">
+						<label>待付款</label> -->
+						<!-- 待收货 -->
+							<!-- <img src="../image/icon/hss.png" class="base_icon">
+						<label>待收货</label> -->
+					</span>
+					<span class="base_b" data-id="'+v.order_id+'">
+						<!-- 删除订单/取消订单 -->
+						<label class="base_right del">删除订单</label>
+						<!-- <label class="base_right pay">去支付</label> -->
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 数据为空 -->
+</body>
+<script type="text/javascript" src="../js/index.js"></script>
+<script type="text/javascript" src="../js/orderList.js"></script>
+</html>
